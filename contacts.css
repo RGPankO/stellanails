@@ -37,6 +37,7 @@ h1 {
 }
 
 h2 {
+	font-size: 30px;
 	color: antiquewhite;
 	text-transform: uppercase;
 	margin-top: 10vh;
@@ -54,7 +55,13 @@ p {
 
 .link-to-fb:hover {
 	text-decoration: none;
-	color: rgb(52, 59, 161);;
+	color: rgb(110, 125, 255);
+	transform-origin: left;
+	transform: scale(1.15);
+}
+
+.fb-icon-text {
+	height: 2em;
 }
 
 footer {
@@ -62,21 +69,33 @@ footer {
 	background-color: black;
 }
 
-@media (max-width: 1253px) {
-	.navbar-nav {
-		padding-left: 40%;
+.footer-nav-link {
+	color: rgba(255, 255, 255, 0.96) !important;
+	text-decoration: none !important;
+}
+
+.footer-nav-link:hover {
+	color: rgba(255, 0, 0, 0.904) !important;
+}
+
+.sm-logo {
+	max-height: 57px;
+}
+
+.sm-logo:hover {
+	transform: scale(1.15);
+}
+
+@media (max-width: 1223px) {
+	.nav-link {
+		padding: 8px 12px !important;
 	}
 
 }
 
 @media (max-width: 1123px) {
-	.navbar-nav {
-		/* padding-left: 170px; */
-		padding-left: 24%;
-	}
-
 	h2 {
-		font-size: 22px;
+		font-size: 25px;
 	}
 
 	p {
@@ -89,16 +108,18 @@ footer {
 }
 
 @media (max-width: 991px) {
-	.navbar-nav {
-		padding-left: 5%;
-	}
-
 	h2 {
 		font-size: 28px;
+		margin-top: 60px;
+		padding-bottom: 10px;
 	}
 
 	p {
 		font-size: 22px;
+	}
+
+	.link-to-fb:hover {
+		transform-origin: center;
 	}
 }
 
@@ -109,16 +130,15 @@ footer {
 	}
 }
 
-@media (max-width: 822px) {
-	.navbar-nav {
-		padding-left: 0;
-	}
-}
 
 @media (max-width: 800px) {
 	h1 {
 		font-size: 17.3px;
 		letter-spacing: 11.3px;
+	}
+
+	.sm-logo {
+		max-height: 48px;
 	}
 }
 
@@ -129,5 +149,15 @@ footer {
 
 	p {
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 567px) {
+	h2 {
+		font-size: 22px;
+	}
+
+	.sm-logo {
+		max-height: 40px;
 	}
 }
