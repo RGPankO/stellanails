@@ -1,0 +1,61 @@
+nav {
+	height: 100px !important;
+	background-color: black;
+}
+
+body {
+	background-color:#131313;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: "futura-pt", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 13.7px;
+}
+
+.nav-item {
+	padding: 8px 14px !important;
+	font-size: 13px;
+	letter-spacing: 3px;
+	font-family: "futura-pt";
+}
+
+.navbar-brand, .nav-item {
+	color: rgba(255, 255, 255, 0.96) !important;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navbar-brand:hover, .nav-item:hover {
+  color: rgba(255, 0, 0, 0.904) !important;
+}
+
+.current {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+
+footer {
+	height: 88.5vh;
+	background-color: black;
+}
+
+.footer-nav-link {
+	color: rgba(255, 255, 255, 0.96) !important;
+	text-decoration: none !important;
+}
+
+.footer-nav-link:hover {
+	color: rgba(255, 0, 0, 0.904) !important;
+}
+
+.sm-logo {
+	max-height: 57px;
+}
+
+.sm-logo:hover {
+	transform: scale(1.15);
+}
