@@ -1,0 +1,342 @@
+body {
+	background-color: black;
+}
+
+body.stella-bg {
+	background: url(./img/stella-bg.png) right center/cover no-repeat fixed;
+}
+
+.body.stella-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(body.stella-bg);
+  filter: grayscale(100%);
+}
+
+/* 
+ ===================
+ NAVBAR
+ ================== */
+
+nav {
+	background-color: black;
+  z-index: 1;
+}
+
+h1.nav-name-logo {
+	text-transform: uppercase;
+	font-family: "futura-pt", sans-serif;
+	font-size: 19px;
+	font-weight: 600;
+	letter-spacing: 0.4em;
+	color: rgba(255, 255, 255, 0.95);
+}
+
+@media (min-width: 1200px) {
+	h1.nav-name-logo {
+		font-size: 24px;
+	}
+}
+
+.navbar-nav .nav-items>.nav-item {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: "futura-pt";
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.95);
+	padding: 16px 30px;
+}
+
+@media (min-width: 992px) {
+	.navbar-nav .nav-items>.nav-item {
+		font-size: 12px;
+		padding: 16px 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar-nav .nav-items>.nav-item {
+		font-size: 14px;
+	}
+}
+
+.navbar-nav .nav-items>.nav-item.current {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+h1.nav-name-logo:hover, .navbar-nav .nav-items>.nav-item:hover {
+color: rgba(255, 0, 0, 0.904);
+}
+
+/* 
+ ===================
+ MAIN
+ ================== */
+
+ /* 
+ ===================
+ MAIN - index
+ ================== */
+
+ h1.small {
+	margin-top: 6.7vh;
+	font-size: 13px;
+	font-family: "futura-pt";
+	text-transform: uppercase;
+	letter-spacing: .58em;
+	font-weight: 700;
+	font-style: normal;
+	color: #eceaea;
+ }
+
+ .xl-name {
+	margin-top: 19vh;
+	font-size: 11.2vw;
+	font-family: "futura-pt";
+	text-transform: uppercase;
+	letter-spacing: 0.10em;
+	font-weight: 700;
+	font-style: normal;
+	color: #eceaea;
+ }
+
+@media (min-width: 768px) {
+	.xl-name {
+		margin-top: 17vh;
+		font-size: 8.5vw;
+		letter-spacing: 0.10em;
+	}
+}
+
+@media (min-width: 992px) {
+	.xl-name {
+		margin: 15vh 0 36px 0;
+		font-size: 7.2vw;
+		letter-spacing: 0.07em;
+	}
+}
+
+ @media (min-width:1200px) {
+	 .xl-name {
+		margin: 15vh 0 36px 0;
+		font-size: 7.2vw;
+		letter-spacing: 0.07em;
+	 }
+ }
+
+ .p__index, .a__index {
+	font-size: 16px;
+	letter-spacing: 0.0255em;
+	font-family: "futura-pt";
+	color: #eceaea;
+}
+
+@media (min-width:768px) {
+	.p__index, .a__index {
+		font-size: 20px;
+		letter-spacing: 0.034em;
+	}
+}
+
+.a__index:hover {
+	color: #eceaea;
+}
+
+.main__margin_nav {
+  margin-top: 80px;
+	padding-top: 60px;
+}
+
+@media (min-width: 992px) {
+	.main-contacts-page {
+		padding-top: 80px;
+	}
+}
+
+.h2--30px {
+	font-size: 30px;
+	color: antiquewhite;
+	text-transform: uppercase;
+}
+
+.p--1em {
+	color: antiquewhite;
+	margin-bottom: 10px;
+}
+
+.fb-icon-text {
+	height: 2em;
+}
+
+.link-to-fb {
+	color: rgb(74, 84, 226);
+}
+
+.link-to-fb:hover {
+	text-decoration: none;
+	color: rgb(110, 125, 255);
+	transform-origin: center;
+	transform: scale(1.15);
+}
+
+@media (min-width: 992px) {
+	.link-to-fb:hover {
+		transform-origin: left;
+	}
+}
+
+.h1__courses {
+  font-size: 16px;
+	color: white;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+	text-transform: uppercase;
+	font-family: "futura-pt";
+ }
+
+/* Parallax courses page */
+.parallax-stella-bg {
+	height: 67vh;
+  background: url("./img/stella-bg-parallax.jpg") center/cover no-repeat fixed;
+  background-position: right calc(50% - 60px);
+}
+
+.courses_sticker {
+	margin-top: 40vh;
+	margin-left: 60px;
+	font-size: 1.1em;
+	font-family: "futura-pt";
+	color: white;
+	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+	.courses_sticker {
+		font-size: 1.25em;
+	}
+}
+
+#picture-1 {
+	max-width: 100%;
+}
+
+#picture-2 {
+	max-width: 100%;
+}
+
+#courses_blog {
+	color: antiquewhite;
+}
+
+#courses_blog:hover {
+	color: antiquewhite;
+}
+
+.h2__courses {
+	color: antiquewhite;
+	font-size: 20px;
+}
+
+/* BTNS */
+.btn-main-grn {
+	width: 260px;
+	padding: 10px 15px;
+	background-color: #79ac49;
+	font-family: "futura-pt";
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #000000;
+	border-style: none;
+	box-shadow: 3px 4px  #4f752a;
+}
+
+@media (min-width: 768px) {
+	.btn-main-grn {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 992px) {
+	.btn-main-grn {
+		font-size: 14.8px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.btn-main-grn {
+		font-size: 16px;
+	}
+}
+
+.btn-main-grn:hover {
+	background-color: #5c8d2f;
+	color: #e2cece;
+	transition: color 0.55s;
+	box-shadow: 3px 4px #3d5c1e;
+}
+
+.black-white-lg-btn {
+	font-size: 16px;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "futura-pt" !important;
+	border-width: 2px !important;
+	padding: 21px 36px;
+ }
+
+.black-white-lg-btn:hover {
+	text-decoration: none !important;
+	color: black;
+	background-color: white;
+ }
+
+/* 
+ ===================
+ FOOTER
+ ================== */
+
+footer {
+	height: 88.5vh;
+	background-color: black;
+}
+
+.footer-nav-link {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: "futura-pt";
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.95);
+	padding: 16px 30px;
+}
+
+.footer-nav-link:hover {
+	color: rgba(255, 0, 0, 0.904);
+	text-decoration: none;
+}
+
+.sm-logo {
+	max-height: 40px;
+}
+
+@media (min-width: 567px) {
+	.sm-logo {
+		max-height: 48px;
+	}
+}
+
+@media (min-width: 768px) {
+	.sm-logo {
+		max-height: 57px;
+	}
+}
+
+.sm-logo:hover {
+	transform: scale(1.15);
+}
