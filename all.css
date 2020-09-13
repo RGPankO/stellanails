@@ -10,7 +10,8 @@ body.stella-bg {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+	width: 100%;
+	height: 100%;
   background-image: url(body.stella-bg);
   filter: grayscale(100%);
 }
@@ -25,7 +26,7 @@ nav {
   z-index: 1;
 }
 
-h1.nav-name-logo {
+h1.nav-name-logo, h2.nav-name-logo {
 	text-transform: uppercase;
 	font-family: "futura-pt", sans-serif;
 	font-size: 19px;
@@ -35,7 +36,7 @@ h1.nav-name-logo {
 }
 
 @media (min-width: 1200px) {
-	h1.nav-name-logo {
+	h1.nav-name-logo, h2.nav-name-logo {
 		font-size: 24px;
 	}
 }
@@ -156,10 +157,12 @@ color: rgba(255, 0, 0, 0.904);
 	}
 }
 
-.h2--30px {
-	font-size: 30px;
+.heading--1_25em {
+	font-size: 1.25em;
 	color: antiquewhite;
 	text-transform: uppercase;
+	font-family: "futura-pt";
+	font-weight: 600;
 }
 
 .p--1em {
@@ -188,8 +191,8 @@ color: rgba(255, 0, 0, 0.904);
 	}
 }
 
-.h1__courses {
-  font-size: 16px;
+.heading--1em {
+  font-size: 1em;
 	color: white;
   font-weight: 600;
   letter-spacing: 0.07em;
@@ -235,10 +238,26 @@ color: rgba(255, 0, 0, 0.904);
 	color: antiquewhite;
 }
 
-.h2__courses {
-	color: antiquewhite;
-	font-size: 20px;
+.gallery-images {
+	height: 200px;
+	width: auto;
+	box-sizing: content-box;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: right;
 }
+
+.p--1_1em {
+	text-transform: uppercase;
+	font-family: "futura-pt";
+	color: antiquewhite;
+	font-size: 1.1em;
+}
+
+.horizontal_divider_line {
+	margin: 6em 0 2.5em 0;
+}
+
 
 /* BTNS */
 .btn-main-grn {
@@ -280,18 +299,18 @@ color: rgba(255, 0, 0, 0.904);
 	box-shadow: 3px 4px #3d5c1e;
 }
 
-.black-white-lg-btn {
+#heading_div>#black-white-lg-btn {
 	font-size: 16px;
 	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-family: "futura-pt" !important;
-	border-width: 2px !important;
+	font-family: "futura-pt";
+	border-width: 2px;
 	padding: 21px 36px;
  }
 
-.black-white-lg-btn:hover {
-	text-decoration: none !important;
+#heading_div>#black-white-lg-btn {
+	text-decoration: none;
 	color: black;
 	background-color: white;
  }
