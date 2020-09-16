@@ -2,6 +2,10 @@ body {
 	background-color: black;
 }
 
+/* 
+ ===================
+ BACKGROUNDS
+ ================== */
 body.stella-bg {
 	background: url(./img/stella-bg.png) right center/cover no-repeat fixed;
 }
@@ -87,7 +91,7 @@ color: rgba(255, 0, 0, 0.904);
 	font-size: 13px;
 	font-family: "futura-pt";
 	text-transform: uppercase;
-	letter-spacing: .58em;
+	letter-spacing: 0.58em;
 	font-weight: 700;
 	font-style: normal;
 	color: #eceaea;
@@ -129,22 +133,24 @@ color: rgba(255, 0, 0, 0.904);
  }
 
  .p__index, .a__index {
-	font-size: 16px;
-	letter-spacing: 0.0255em;
+	font-size: 1.125em;
+	letter-spacing: 0.0286875em;
 	font-family: "futura-pt";
 	color: #eceaea;
 }
 
 @media (min-width:768px) {
 	.p__index, .a__index {
-		font-size: 20px;
-		letter-spacing: 0.034em;
+		font-size: 1.40625;
+		letter-spacing: 0.03825em;
 	}
 }
 
 .a__index:hover {
 	color: #eceaea;
 }
+
+/* ====================== */
 
 .main__margin_nav {
   margin-top: 80px;
@@ -157,21 +163,8 @@ color: rgba(255, 0, 0, 0.904);
 	}
 }
 
-.heading--1_25em {
-	font-size: 1.25em;
-	color: antiquewhite;
-	text-transform: uppercase;
-	font-family: "futura-pt";
-	font-weight: 600;
-}
-
-.p--1em {
-	color: antiquewhite;
-	margin-bottom: 10px;
-}
-
 .fb-icon-text {
-	height: 2em;
+	height: 2.25em;
 }
 
 .link-to-fb {
@@ -191,75 +184,117 @@ color: rgba(255, 0, 0, 0.904);
 	}
 }
 
-.heading--1em {
-  font-size: 1em;
-	color: white;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-	text-transform: uppercase;
-	font-family: "futura-pt";
- }
+/* 
+ ===================
+ PARALLAX
+ ================== */
 
-/* Parallax courses page */
 .parallax-stella-bg {
-	height: 67vh;
-  background: url("./img/stella-bg-parallax.jpg") center/cover no-repeat fixed;
-  background-position: right calc(50% - 60px);
-}
-
-.courses_sticker {
-	margin-top: 40vh;
-	margin-left: 60px;
-	font-size: 1.1em;
-	font-family: "futura-pt";
-	color: white;
-	font-weight: 700;
+	height: 50vh;
+  background: url("./img/stella-bg-parallax.jpg") center no-repeat fixed;
+  background-size: 100%;
+  background-position: right 8%;
 }
 
 @media (min-width: 768px) {
-	.courses_sticker {
-		font-size: 1.25em;
+	.parallax-stella-bg {
+		height: 67vh;
+    background: url("./img/stella-bg-parallax.jpg") center/cover no-repeat fixed;
+    background-position: right calc(50% - 60px);
 	}
 }
 
-#picture-1 {
-	max-width: 100%;
+.parallax_sticker_div {
+	margin-top: 35vh;
+	margin-left: 20px;
 }
 
-#picture-2 {
-	max-width: 100%;
+@media (min-width: 768px) {
+	.parallax_sticker_div {
+		margin-top: 45vh;
+		margin-left: 60px;
+	}
 }
 
-#courses_blog {
+.parallax_sticker {
+	font-size: 1.0125em;
+	font-family: "futura-pt";
+	color: white;
+	font-weight: 700;
+	letter-spacing: 0.045em;
+}
+
+@media (min-width: 768px) {
+	.parallax_sticker {
+		font-size: 1.2375em;
+	}
+}
+
+/* 
+ =======================
+ HEADINGS AND PARAGRAPHS
+ ======================= */
+
+.p--1em {
+	font-size: 1.125em;
 	color: antiquewhite;
-}
-
-#courses_blog:hover {
-	color: antiquewhite;
-}
-
-.gallery-images {
-	height: 200px;
-	width: auto;
-	box-sizing: content-box;
-	overflow: hidden;
-	object-fit: cover;
-	object-position: right;
+	margin-bottom: 10px;
 }
 
 .p--1_1em {
 	text-transform: uppercase;
 	font-family: "futura-pt";
 	color: antiquewhite;
-	font-size: 1.1em;
+	font-size: 1.2375em;
+}
+
+.p__about_us {
+	font-size: 1.1953125em;
+	text-transform: uppercase;
+	color: antiquewhite;
+}
+
+.p--1_5em {
+	font-size: 1.6875em;
+	color: antiquewhite;
+	text-transform: uppercase;
+	font-family: "futura-pt";
+	font-weight: 600;
+}
+
+.heading--1em {
+  font-size: 1.125em;
+	color: white;
+  font-weight: 600;
+  letter-spacing: 0.07875em;
+	text-transform: uppercase;
+	font-family: "futura-pt";
+ }
+
+.heading--1_25em {
+	font-size: 1.40625em;
+	color: antiquewhite;
+	text-transform: uppercase;
+	font-family: "futura-pt";
+	font-weight: 600;
+}
+
+a.goldenrod {
+	color: goldenrod;
+}
+
+a.goldenrod:hover {
+	color: antiquewhite;
 }
 
 .horizontal_divider_line {
 	margin: 6em 0 2.5em 0;
 }
 
-
-/* BTNS */
+/* 
+ ===================
+ BUTTONS
+ ================== */
 .btn-main-grn {
 	width: 260px;
 	padding: 10px 15px;
@@ -299,21 +334,42 @@ color: rgba(255, 0, 0, 0.904);
 	box-shadow: 3px 4px #3d5c1e;
 }
 
-#heading_div>#black-white-lg-btn {
+#black-white-lg-btn {
 	font-size: 16px;
 	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: "futura-pt";
-	border-width: 2px;
 	padding: 21px 36px;
  }
 
-#heading_div>#black-white-lg-btn {
+#black-white-lg-btn:hover {
 	text-decoration: none;
 	color: black;
 	background-color: white;
  }
+
+ /* 
+ ===================
+ IMAGES
+ ================== */
+
+ #picture-1 {
+	max-width: 100%;
+}
+
+#picture-2 {
+	max-width: 100%;
+}
+
+.gallery-images {
+	height: 200px;
+	width: auto;
+	box-sizing: content-box;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: right;
+}
 
 /* 
  ===================
@@ -326,7 +382,7 @@ footer {
 }
 
 .footer-nav-link {
-	font-size: 12px;
+	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 	font-family: "futura-pt";
