@@ -21,6 +21,11 @@
 
 	<!-- BOOTSTRAP JS -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- Lightbox -->
+	<script src="./lightbox/lightbox-plus-jquery.min.js"></script>
+	<link rel="stylesheet" href="./lightbox/lightbox.min.css">
+
 </head>
 
 
@@ -51,181 +56,107 @@
 	<main class="main__margin_nav d-flex justify-content-center">
 		<div class="col-10">
 			<div class="row">
-				<!-- <div class="col-lg-3 col-md-4 col-6 card" style="width: 18rem;">
-					<img src="./img/stella_gallery/1.jpg" class="card-img-top" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images overflow-hidden">
+					<a href="./img/stella_gallery/1.jpg" data-lightbox="stella-gallery"><img class="gallery_image p-0 border-0" src="./img/stella_gallery/1.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6 card" style="width: 18rem;">
-					<img src="./img/stella_gallery/2.jpg" class="card-img-top" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images overflow-hidden">
+					<a href="./img/stella_gallery/2.jpg" data-lightbox="stella-gallery"><img class="gallery_image p-0 border-0" src="./img/stella_gallery/2.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6 card" style="width: 18rem;">
-					<img src="./img/stella_gallery/3.jpg" class="card-img-top" alt="">
-				</div> -->
-
-
-				<!-- <div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="./img/stella_gallery/1.jpg" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images overflow-hidden">
+					<a href="./img/stella_gallery/3.jpg" data-lightbox="stella-gallery"><img class="gallery_image p-0 border-0" src="./img/stella_gallery/3.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="./img/stella_gallery/4.jpg
-								" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images overflow-hidden">
+					<a href="./img/stella_gallery/4.jpg" data-lightbox="stella-gallery"><img class="gallery_image p-0 border-0" src="./img/stella_gallery/4.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="./img/stella_gallery/3.jpg" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images overflow-hidden">
+					<a href="./img/stella_gallery/5.jpg" data-lightbox="stella-gallery"><img class="gallery_image p-0 border-0" src="./img/stella_gallery/5.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/6.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/6.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/7.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/7.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/8.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/8.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/9.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/9.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/10.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/10.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/11.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/11.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/12.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/12.jpg" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
-							</a>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/13.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/13.png" alt=""></a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#" class="d-block mb-4 h-100">
-								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
-							</a>
-				</div> -->
-
-
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images overflow-hidden">
-					<img class="gallery_image p-0 border-0" src="./img/stella_gallery/1.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/14.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/14.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images overflow-hidden">
-					<img class="gallery_image p-0 border-0" src="./img/stella_gallery/2.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/15.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/15.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images overflow-hidden">
-					<img class="gallery_image p-0 border-0" src="./img/stella_gallery/3.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/16.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/16.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images overflow-hidden">
-					<img class="gallery_image p-0 border-0" src="./img/stella_gallery/4.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/17.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/17.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images overflow-hidden">
-					<img class="gallery_image p-0 border-0" src="./img/stella_gallery/5.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/18.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/18.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/6.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/19.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/19.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/7.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/20.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/20.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/8.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/21.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/21.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/9.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/22.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/22.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/10.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/23.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/23.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/11.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/24.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/24.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/12.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/25.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/25.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/13.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/26.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/26.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/14.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/27.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/27.jpg" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/15.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/28.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/28.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/16.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/29.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/29.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/17.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/30.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/30.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/18.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/31.png" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/31.png" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/19.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/32_microblading2.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/32_microblading2.jpg" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/20.png" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/33_microblading1.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/33_microblading1.jpg" alt=""></a>
 				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/21.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/22.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/23.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/24.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/25.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/26.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/27.jpg" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/28.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/29.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/30.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/31.png" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/32_microblading2.jpg" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/33_microblading1.jpg" alt="">
-				</div>
-				<div class="div col-6 col-md-4 col-xl-3 mb-3 gallery-images">
-					<img class="gallery_image" src="./img/stella_gallery/34_microblading3.jpg" alt="">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 gallery-images">
+					<a href="./img/stella_gallery/34_microblading3.jpg" data-lightbox="stella-gallery"><img class="gallery_image" src="./img/stella_gallery/34_microblading3.jpg" alt=""></a>
 				</div>
 			</div>
 			<h1 class="heading--1_25em mt-5">Моделите са изработени от Стела Георгиева Stella Nails, международен преподавател.</h1>
@@ -251,5 +182,12 @@
 		</div>
 	</footer>
 
+
+	<script>
+		lightbox.option({
+		  'resizeDuration': 200,
+		  'wrapAround': true
+		})
+	</script>
 </body>
 </html>
