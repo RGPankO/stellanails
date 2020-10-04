@@ -184,6 +184,46 @@ color: rgba(255, 0, 0, 0.904);
 	}
 }
 
+.products_img_row {
+	margin-bottom: 60px;
+}
+
+.div__news {
+	margin-bottom: 60px;
+}
+
+.news_commentarea_div {
+	position: relative;
+}
+
+.news_commentarea {
+	position: relative;
+}
+
+.in_commentarea_btn {
+	color: red;
+	font-size: 16px;
+	font-weight: 600;
+	background: black;
+}
+
+.in_commentarea_btn1 {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
+
+.in_commentarea_btn2 {
+	position: absolute;
+	right: 170px;
+	bottom: 10px;
+}
+
+.new_old_btn:hover {
+	color: white;
+	background: black;
+}
+
 /* 
  ===================
  PARALLAX
@@ -235,6 +275,12 @@ color: rgba(255, 0, 0, 0.904);
  HEADINGS AND PARAGRAPHS
  ======================= */
 
+.p--0_9em {
+	font-size: 0.9em;
+	color: antiquewhite;
+	margin-bottom: 4px;
+}
+
 .p--1em {
 	font-size: 1.125em;
 	color: antiquewhite;
@@ -273,6 +319,15 @@ color: rgba(255, 0, 0, 0.904);
 
 .heading--1_25em {
 	font-size: 1.40625em;
+	color: antiquewhite;
+	text-transform: uppercase;
+	font-family: "futura-pt";
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.heading--2em {
+	font-size: 2em;
 	color: antiquewhite;
 	text-transform: uppercase;
 	font-family: "futura-pt";
@@ -349,6 +404,11 @@ a.goldenrod:hover {
 	background-color: white;
  }
 
+ .news_button:hover {
+	color: white;
+	background: black;
+ }
+
  /* 
  ===================
  IMAGES
@@ -401,6 +461,16 @@ a.goldenrod:hover {
 	transform: translate(0, -50%);
 	width: calc(100% - 20px);
 	height: auto;
+}
+
+.products__img-1 {
+	max-height: 300px;
+	width: auto;
+}
+
+.products__img {
+	max-height: 300px;
+	max-width: 100%;
 }
 
 /* 
