@@ -1,0 +1,163 @@
+nav {
+	height: 100px !important;
+	background-color: black;
+}
+
+body {
+	background-color:#131313;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: "futura-pt", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 13.7px;
+}
+
+.nav-item {
+	padding: 8px 14px !important;
+	font-size: 13px;
+	letter-spacing: 3px;
+	font-family: "futura-pt";
+}
+
+.navbar-brand, .nav-item {
+	color: rgba(255, 255, 255, 0.96) !important;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navbar-brand:hover, .nav-item:hover {
+  color: rgba(255, 0, 0, 0.904) !important;
+}
+
+.current {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
+h2 {
+	font-size: 30px;
+	color: antiquewhite;
+	text-transform: uppercase;
+	margin-top: 10vh;
+}
+
+p {
+	color: antiquewhite;
+	word-break: break-all;
+	margin-bottom: 10px;
+}
+
+.link-to-fb {
+	color: rgb(74, 84, 226);
+}
+
+.link-to-fb:hover {
+	text-decoration: none;
+	color: rgb(110, 125, 255);
+	transform-origin: left;
+	transform: scale(1.15);
+}
+
+.fb-icon-text {
+	height: 2em;
+}
+
+footer {
+	height: 88.5vh;
+	background-color: black;
+}
+
+.footer-nav-link {
+	color: rgba(255, 255, 255, 0.96) !important;
+	text-decoration: none !important;
+}
+
+.footer-nav-link:hover {
+	color: rgba(255, 0, 0, 0.904) !important;
+}
+
+.sm-logo {
+	max-height: 57px;
+}
+
+.sm-logo:hover {
+	transform: scale(1.15);
+}
+
+@media (max-width: 1223px) {
+	.nav-link {
+		padding: 8px 12px !important;
+	}
+
+}
+
+@media (max-width: 1123px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+		
+	.contacts {
+		padding-left: 40px;
+	}
+}
+
+@media (max-width: 991px) {
+	h2 {
+		font-size: 28px;
+		margin-top: 60px;
+		padding-bottom: 10px;
+	}
+
+	p {
+		font-size: 22px;
+	}
+
+	.link-to-fb:hover {
+		transform-origin: center;
+	}
+}
+
+@media (max-width: 960px) {
+	h1 {
+		font-size: 19px;
+		letter-spacing: 13px;
+	}
+}
+
+
+@media (max-width: 800px) {
+	h1 {
+		font-size: 17.3px;
+		letter-spacing: 11.3px;
+	}
+
+	.sm-logo {
+		max-height: 48px;
+	}
+}
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 567px) {
+	h2 {
+		font-size: 22px;
+	}
+
+	.sm-logo {
+		max-height: 40px;
+	}
+}
