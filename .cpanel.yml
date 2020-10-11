@@ -1,5 +1,6 @@
 ---
-    deployment:
-      tasks:
-        - export DEPLOYPATH=/home/stella405/public_html/
-        - /bin/cp -R . $DEPLOYPATH
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/stella405/public_html/
+      - /bin/cp index.html $DEPLOYPATH
+      - /bin/cp -R . $DEPLOYPATH
