@@ -8,6 +8,7 @@ body {
  ================== */
 body.stella-bg {
 	background: url(./img/stella-bg.png) right center/cover no-repeat fixed;
+	z-index: -2;
 }
 
 body.stella-bg::before {
@@ -20,6 +21,7 @@ body.stella-bg::before {
 	height: 100%;
 	background-color: black;
 	opacity: 28%;
+	z-index: -1;
 }
 
 /* 
