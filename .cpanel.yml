@@ -4,3 +4,5 @@
       - export DEPLOYPATH=/home/stella405/public_html/
       - /bin/rm -rf $DEPLOYPATH/*
       - /bin/cp -R . $DEPLOYPATH
+      - /bin/rm -f $DEPLOYPATH/.cpanel.yml
+      - /bin/rm -f $DEPLOYPATH/.gitignore
